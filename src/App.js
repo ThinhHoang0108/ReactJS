@@ -6,6 +6,7 @@ import React, {handle, value} from "./react.js";
 
 
 function App() {
+  //JSX
   return (
     <div className="App">
       <Header></Header>
