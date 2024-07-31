@@ -1,21 +1,22 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Header from "./component/Demo/Header";
-import HeaderRFC from "./component/Demo/HeaderRFC";
-import React, {handle, value} from "./react.js";
-
+import logo from "./logo.svg"
+import "./App.css"
+import Header from "./component/Demo/Header"
+import HeaderRFC from "./component/Demo/HeaderRFC"
+import React, { handle, value } from "./react.js"
+import MyComponent from "./component/Demo/MyComponent.js"
 
 function App() {
   //JSX
   return (
-    <div className="App">
+    <div className='App'>
       <Header></Header>
       <HeaderRFC></HeaderRFC>
+      <MyComponent></MyComponent>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 // Destructuring
 // const user = {
 //   name: "thinh",
