@@ -1,20 +1,20 @@
 import React from "react"
-class Userinfor extends React.Component {
+class AddUserinfor extends React.Component {
   state = {
     name: "thinh",
     address: "lang ha",
     age: 22
   }
-  handleClick(event) {
-    console.log(">> Click me my button")
-    console.log("My name is ", this.state.name)
+  // handleClick(event) {
+  //   console.log(">> Click me my button")
+  //   console.log("My name is ", this.state.name)
 
-    //merge state => react class
-    this.setState({
-      name: "Xuan",
-      age: Math.floor(Math.random() * 100 + 1)
-    })
-  }
+  //   //merge state => react class
+  //   this.setState({
+  //     name: "Xuan",
+  //     age: Math.floor(Math.random() * 100 + 1)
+  //   })
+  // }
 
   handleOnMouseOver(event) {
     // console.log(event.pageX)
@@ -33,7 +33,12 @@ class Userinfor extends React.Component {
   }
   handleOnSubmit = (event) => {
     event.preventDefault()
-    console.log(this.state)
+    // console.log(this.state)
+    this.props.handleAddNewUser({
+      id: Math.floor(Math.random() * 100 + 1) + "-random",
+      name: this.state.name,
+      age: this.state.age
+    })
   }
 
   render() {
@@ -64,4 +69,4 @@ class Userinfor extends React.Component {
     )
   }
 }
-export default Userinfor
+export default AddUserinfor

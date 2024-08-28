@@ -1,5 +1,5 @@
 import logo from "./logo.svg"
-import "./App.css"
+import "./App.scss"
 import Header from "./component/Demo/Header"
 import HeaderRFC from "./component/Demo/HeaderRFC"
 import React, { handle, value } from "./react.js"
@@ -8,9 +8,9 @@ import MyComponent from "./component/Demo/MyComponent.js"
 function App() {
   //JSX
   return (
-    <div className='App'>
-      <Header></Header>
-      <HeaderRFC></HeaderRFC>
+    <div className='app-container'>
+      {/* <Header></Header> */}
+      {/* <HeaderRFC></HeaderRFC> */}
       <MyComponent></MyComponent>
     </div>
   )
